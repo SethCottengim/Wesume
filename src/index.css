@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Cursor */
+.custom-cursor {
+  position: fixed;
+  width: 0px; /* Start at 0 radius */
+  height: 0px; /* Start at 0 radius */
+  border-radius: 50%;
+  background-color: orange;
+  pointer-events: none; /* Ensure the circle doesn't interfere with clicks */
+  z-index: 51;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s linear, height 0.3s linear, transform 0.3s ease-out; /* Slower movement */
+}
